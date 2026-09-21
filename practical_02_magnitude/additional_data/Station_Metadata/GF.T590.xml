@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SNJ update using ERDK + polezero.ini</Source>
+  <Module>ObsPy 1.4.0</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-06-15T18:06:11.210494Z</Created>
+  <Network code="GF">
+    <Station code="T590">
+      <Latitude unit="DEGREES">40.48861</Latitude>
+      <Longitude unit="DEGREES">27.97892</Longitude>
+      <Elevation unit="METERS">68.9</Elevation>
+      <Site>
+        <Name>GONAF 2</Name>
+      </Site>
+      <CreationDate>2025-03-01T00:00:00.000000Z</CreationDate>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">40.48861</Latitude>
+        <Longitude unit="DEGREES">27.97892</Longitude>
+        <Elevation unit="METERS">68.9</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Sensor>
+          <Description>Geophone</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1639344260.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>m/s</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.443</Real>
+                <Imaginary>4.443</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.443</Real>
+                <Imaginary>-4.443</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>2000</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHN" locationCode="00">
+        <Latitude unit="DEGREES">40.48861</Latitude>
+        <Longitude unit="DEGREES">27.97892</Longitude>
+        <Elevation unit="METERS">68.9</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Sensor>
+          <Description>Geophone</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1639344260.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>m/s</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.443</Real>
+                <Imaginary>4.443</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.443</Real>
+                <Imaginary>-4.443</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>2000</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHE" locationCode="00">
+        <Latitude unit="DEGREES">40.48861</Latitude>
+        <Longitude unit="DEGREES">27.97892</Longitude>
+        <Elevation unit="METERS">68.9</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Sensor>
+          <Description>Geophone</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1639344260.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>m/s</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.443</Real>
+                <Imaginary>4.443</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.443</Real>
+                <Imaginary>-4.443</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>2000</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

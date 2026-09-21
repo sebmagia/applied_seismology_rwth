@@ -1,0 +1,13 @@
+<inventory xmlns="http://geofon.gfz-potsdam.de/ns/Inventory/1.0/">
+	<network archive="afad" code="TU" description="National Seismic Network of Turkiye" end="" institutions="" netClass="p" publicID="Network/20210113121012.334343.2" region="" restricted="false" shared="true" start="1980-01-01T00:00:00.0000Z" type="">
+		<remark />
+		<station affiliation="National Seismic Network of Turkiye" archive="afad" archiveNetworkCode="" code="AVCA" country=" Kirklareli" description="Demirkoy, Kirklareli" elevation="235.3" end="" latitude="41.899452" longitude="27.850143" place="Demirkoy" publicID="Station/20231229163904.952517.1703" restricted="false" shared="true" start="2023-12-19T19:04:02.0000Z" type="">
+			<remark />
+			<sensorLocation code="" elevation="235.3" end="" latitude="41.899452" longitude="27.850143" publicID="SensorLocation/20231229163904.9527.1704" start="2023-12-19T19:04:02.0000Z">
+				<stream azimuth="0.0" clockSerialNumber="" code="HHZ" datalogger="Datalogger/20231229163904.955512.1720" dataloggerChannel="0" dataloggerSerialNumber="xxxx" depth="0.0" dip="-90.0" end="" flags="G" format="Integer Differences Compression" gain="825941000.0" gainFrequency="1.0" gainUnit="M/S" publicID="Stream/20231229163904.955443.1719" restricted="false" sampleRateDenominator="1" sampleRateNumerator="100" sensor="Sensor/20231229163904.95646.1724" sensorChannel="0" sensorSerialNumber="yyyy" shared="true" start="2023-12-19T19:04:02.0000Z" />
+				<stream azimuth="0.0" clockSerialNumber="" code="HHN" datalogger="Datalogger/20231229163904.954262.1713" dataloggerChannel="1" dataloggerSerialNumber="xxxx" depth="0.0" dip="0.0" end="" flags="G" format="Integer Differences Compression" gain="818410000.0" gainFrequency="1.0" gainUnit="M/S" publicID="Stream/20231229163904.954189.1712" restricted="false" sampleRateDenominator="1" sampleRateNumerator="100" sensor="Sensor/20231229163904.95524.1717" sensorChannel="1" sensorSerialNumber="yyyy" shared="true" start="2023-12-19T19:04:02.0000Z" />
+				<stream azimuth="90.0" clockSerialNumber="" code="HHE" datalogger="Datalogger/20231229163904.952846.1706" dataloggerChannel="2" dataloggerSerialNumber="xxxx" depth="0.0" dip="0.0" end="" flags="G" format="Integer Differences Compression" gain="818410000.0" gainFrequency="1.0" gainUnit="M/S" publicID="Stream/20231229163904.952755.1705" restricted="false" sampleRateDenominator="1" sampleRateNumerator="100" sensor="Sensor/20231229163904.953959.1710" sensorChannel="2" sensorSerialNumber="yyyy" shared="true" start="2023-12-19T19:04:02.0000Z" />
+			</sensorLocation>
+		</station>
+	</network>
+</inventory>

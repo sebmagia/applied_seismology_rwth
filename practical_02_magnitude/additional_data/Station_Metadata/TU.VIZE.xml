@@ -1,0 +1,13 @@
+<inventory xmlns="http://geofon.gfz-potsdam.de/ns/Inventory/1.0/">
+	<network archive="afad" code="TU" description="National Seismic Network of Turkiye" end="" institutions="" netClass="p" publicID="Network/20210113121012.334343.2" region="" restricted="false" shared="true" start="1980-01-01T00:00:00.0000Z" type="">
+		<remark />
+		<station affiliation="National Seismic Network of Turkiye" archive="afad" archiveNetworkCode="" code="VIZE" country=" Kirklareli" description="Vize, Kirklareli" elevation="345.0" end="" latitude="41.5785" longitude="27.84" place="Vize" publicID="Station/20210113121050.765991.19676" restricted="false" shared="true" start="2014-11-28T00:00:00.0000Z" type="">
+			<remark />
+			<sensorLocation code="" elevation="345.0" end="" latitude="41.5785" longitude="27.84" publicID="SensorLocation/20210113121050.766958.19677" start="2014-11-28T00:00:00.0000Z">
+				<stream azimuth="0.0" clockSerialNumber="" code="HHZ" datalogger="Datalogger/20210113121050.866942.19703" dataloggerChannel="0" dataloggerSerialNumber="xxxx" depth="0.0" dip="-90.0" end="" flags="CG" format="Steim2" gain="468622000.0" gainFrequency="0.05" gainUnit="M/S" publicID="Stream/20210113121050.865296.19702" restricted="false" sampleRateDenominator="1" sampleRateNumerator="100" sensor="Sensor/20210113121050.91715.19712" sensorChannel="0" sensorSerialNumber="yyyy" shared="true" start="2014-11-28T00:00:00.0000Z" />
+				<stream azimuth="0.0" clockSerialNumber="" code="HHN" datalogger="Datalogger/20210113121050.816641.19691" dataloggerChannel="1" dataloggerSerialNumber="xxxx" depth="0.0" dip="0.0" end="" flags="CG" format="Steim2" gain="468622000.0" gainFrequency="0.05" gainUnit="M/S" publicID="Stream/20210113121050.815478.19690" restricted="false" sampleRateDenominator="1" sampleRateNumerator="100" sensor="Sensor/20210113121050.860783.19700" sensorChannel="1" sensorSerialNumber="yyyy" shared="true" start="2014-11-28T00:00:00.0000Z" />
+				<stream azimuth="90.0" clockSerialNumber="" code="HHE" datalogger="Datalogger/20210113121050.768401.19679" dataloggerChannel="2" dataloggerSerialNumber="xxxx" depth="0.0" dip="0.0" end="" flags="CG" format="Steim2" gain="468622000.0" gainFrequency="0.05" gainUnit="M/S" publicID="Stream/20210113121050.767255.19678" restricted="false" sampleRateDenominator="1" sampleRateNumerator="100" sensor="Sensor/20210113121050.813123.19688" sensorChannel="2" sensorSerialNumber="yyyy" shared="true" start="2014-11-28T00:00:00.0000Z" />
+			</sensorLocation>
+		</station>
+	</network>
+</inventory>
