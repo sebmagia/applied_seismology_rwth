@@ -1,0 +1,35 @@
+# pip alternative to environment.yml (use one or the other).
+# Needs Python 3.12, 64-bit. See README.md, section "Without conda".
+#
+# Linux only: install CPU-only PyTorch BEFORE this file, otherwise pip downloads ~3 GB of GPU libraries:
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# Same versions as environment.yml; the reasons for the fixed versions are explained there.
+
+numpy==1.26.4
+scipy==1.16.*
+pandas==2.2.*
+matplotlib==3.10.*
+statsmodels
+scikit-learn==1.7.0
+numba
+
+obspy==1.5.1
+cartopy==0.26.0
+shapely>=2
+pyproj
+geopandas<1.2          # geopandas 1.2 requires numpy >= 2
+
+torch
+
+SKHASH==1.1.5
+seismostats==1.0.1
+seisbench==0.12.6
+pyocto==0.2.0
+GMMA @ https://github.com/AI4EPS/GaMMA/archive/80394dd4a4c29450da599f507916ecf1db6203dd.zip
+
+jupyterlab>=4,<5
+notebook>=7,<8
+ipykernel
+ipywidgets>=8,<9
+ipympl==0.9.8          # %matplotlib widget: the interactive figures of the notebooks

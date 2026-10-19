@@ -1,0 +1,91 @@
+# One environment for the four Applied Seismology practicals.
+#
+#   conda env create -f environment.yml
+#   conda activate applied-seismology
+#   python check_environment.py
+#   python -m jupyterlab
+#
+# Updating an existing installation (stop JupyterLab first):
+#   conda env update -n applied-seismology -f environment.yml
+#   conda activate applied-seismology
+#   python -m jupyterlab
+# Then refresh the browser and select the applied-seismology Python kernel.
+# The notebooks select their figure backend themselves (%matplotlib widget in the import cell).
+#
+# Why some versions are fixed:
+#   python 3.12          pyocto (PhaseNet catalog practical) has no wheels for Python 3.13,
+#                        and numpy 1.26 (next line) has none either
+#   numpy 1.26.4         SKHASH 1.1.5 (focal mechanisms) requires numpy < 2
+#   scikit-learn 1.7.0   the pinned GaMMA commit requires exactly scikit-learn 1.7
+#   pandas 2.2           the notebooks were written and run with pandas 2.2 (pandas 3 changed
+#                        copy and string behavior)
+#   pytorch-cpu          CPU-only PyTorch for SeisBench/PhaseNet (no multi-GB GPU download)
+#   obspy, cartopy, seisbench, pyocto, SKHASH, seismostats: the versions the notebooks ran with
+name: applied-seismology
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+
+  # scientific Python
+  - numpy=1.26.4
+  - scipy=1.16
+  - pandas=2.2
+  - matplotlib-base=3.10
+  - statsmodels
+  - scikit-learn=1.7.0
+  - numba
+  - h5py
+  - bottleneck
+  - tqdm
+  - requests
+  - jinja2
+  - typing_extensions
+  - nest-asyncio
+
+  # seismology and maps
+  - obspy=1.5.1
+  - cartopy=0.26.0
+  - shapely>=2
+  - pyproj
+  - geopandas-base
+  - pyogrio
+
+  # machine learning (SeisBench / PhaseNet)
+  - pytorch-cpu
+
+  # Jupyter and interactive plots: install the server and kernel in this environment.
+  # ipympl includes the jupyter-matplotlib browser extension for %matplotlib widget.
+  # ipympl 0.9.8 supports JupyterLab 4 and Matplotlib 3.10.
+  # jupyterlab_widgets provides the widget manager for JupyterLab / Notebook 7.
+  - jupyterlab=4
+  - notebook=7
+  - ipykernel
+  - ipywidgets=8
+  - jupyterlab_widgets=3
+  - ipympl=0.9.8
+
+  # packages that are only on PyPI (all their dependencies are installed above)
+  - pip:
+      - SKHASH==1.1.5
+      - seismostats==1.0.1
+      - seisbench==0.12.6
+      - pyocto==0.2.0
+      - GMMA @ https://github.com/AI4EPS/GaMMA/archive/80394dd4a4c29450da599f507916ecf1db6203dd.zip
+
+# Linux: the packages above need the environment's own C++ runtime (libstdc++), which is newer than
+# the one of e.g. Ubuntu 22.04. Some shells set LD_PRELOAD or LD_LIBRARY_PATH to system libraries
+# (a common fix for old OpenGL/Qt errors), which then breaks Matplotlib, PROJ, PyTorch and Jupyter with
+# "version `CXXABI_1.3.15' not found". The environment switches both off while it is active; conda
+# restores your own values when you deactivate it. (No effect on Windows and macOS.)
+#
+# All systems: a MPLBACKEND set in the shell (e.g. TkAgg) is inherited by the Jupyter kernels; a notebook
+# that does not choose its backend then opens figures in separate windows and plt.show() blocks the cell.
+# The environment switches it off too, so that Jupyter draws the figures inside the notebook.
+variables:
+  LD_PRELOAD: ""
+  LD_LIBRARY_PATH: ""
+  MPLBACKEND: ""
+
