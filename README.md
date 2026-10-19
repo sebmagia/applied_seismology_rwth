@@ -146,26 +146,3 @@ Python 3.12 if needed); then use `uv pip install` instead of `python -m pip inst
   this to an older installation).
 - **`python check_environment.py` reports a problem**: send its complete output to your instructor.
 
-## Notes for instructors
-
-**Why some versions are fixed** (details in `environment.yml`): Python 3.12, because pyocto has no wheels for
-3.13; numpy 1.26.4, because SKHASH 1.1.5 requires numpy < 2; scikit-learn 1.7.0, because the pinned GaMMA commit
-requires exactly 1.7; pandas 2.2, because the notebooks were written and run with it (pandas 3 changed copy and
-string behavior); CPU-only PyTorch. ObsPy, Cartopy, SeisBench, pyocto, SKHASH and SeismoStats are pinned to the
-versions the notebooks ran with in class.
-
-**Changes from the Colab class notebooks:** the notebooks run locally only: the Colab installation cell is now an
-environment check, and the Colab-specific code (installation, widget manager, download of the picks) was removed;
-numbered file names (`practical_<N>_<topic>.ipynb`); the set-up text explains the local workflow; all figures are
-interactive (`%matplotlib widget` in the import cell, never switched; ObsPy waveform plots with `handle=True`);
-headings, exercise numbers and spelling (American English) follow one convention; saved outputs and Colab metadata
-were removed. The teaching content and the analysis code are unchanged.
-
-**Before pushing:** clear the outputs (*Edit → Clear Outputs of All Cells*, then save), so that the notebooks stay
-small and students start from a clean state.
-
-**Testing the environment on Windows, macOS and Linux:** if this folder is the root of a GitHub repository,
-`.github/workflows/test-environment.yml` creates the environment on all three systems (conda and pip), runs
-`check_environment.py`, and executes the four notebooks on Linux (*Actions → Test the course environment →
-Run workflow*). It also runs monthly, so a new package release that breaks the environment shows up before
-the next course.
